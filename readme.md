@@ -29,4 +29,31 @@ For example, in Happy Number, you are asked to detect a cycle from a linked list
 
 Why Use Two Pointers?
 Two pointers are helpful because it often offers a more efficient solution than the naive solution. From the examples above, if we use the naive solution and use two loops to iterate through the array, the time complexity would typically be O(n^2), which is generally insufficient. If we use two pointers for this type of problem, we are often only passing through the array once with the two pointers, which means that the time complexity is often O(n).
-#####  Sliding Window
+##  Sliding Window
+
+Sliding window problems are a variant of the same direction two pointers problems. The function performs on the entire interval between the two pointers instead of only at the two positions. Usually, we keep track of the overall result of the window, and when we "slide" the window (insert/remove an item), we simply manipulate the result to accommodate the changes to the window. Time complexity wise, this is much more efficient as we do not recalculate the overlapping intervals between two windows over and over again. We try to reduce a nested loop into two passes on the input (one pass with each pointer).
+
+### Why is Sliding Window required??
+Through the brute force we do unnecessary iteration over elements we have already seen.
+This is duplicated work and typically yields on O(N*K) time complexity.
+
+### Recognising these problems in the wind
+1. Contiguous sequence of elements
+2. Strings, arrays, linkedlist
+3. min, max, longest, shortest, contained in window
+4. 
+1. Fixed Length
+```java
+class SlidingWindow {
+    private static W slidingWindowFixed(List<T> input, int windowSize) {
+        W ans = window = input.subList(0, windowSize);
+        for (int right = windowSize; right < input.length(); ++right) {
+            int left = right - windowSize;
+            //remove input[left]from window
+            //append input[right]to window
+            //ans = optimal(ans, window);
+        }
+        return ans;
+    }
+}
+```

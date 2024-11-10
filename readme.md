@@ -41,7 +41,8 @@ This is duplicated work and typically yields on O(N*K) time complexity.
 1. Contiguous sequence of elements
 2. Strings, arrays, linkedlist
 3. min, max, longest, shortest, contained in window
-4. 
+
+
 1. Fixed Length
 ```java
 class SlidingWindow {

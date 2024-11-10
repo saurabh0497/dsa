@@ -42,8 +42,7 @@ This is duplicated work and typically yields on O(N*K) time complexity.
 2. Strings, arrays, linkedlist
 3. min, max, longest, shortest, contained in window
 
-
-1. Fixed Length
+### Fixed Length
 ```java
 class SlidingWindow {
     private static W slidingWindowFixed(List<T> input, int windowSize) {
@@ -58,3 +57,5 @@ class SlidingWindow {
     }
 }
 ```
+
+### Variable Length

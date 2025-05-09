@@ -5,14 +5,11 @@ import java.util.Arrays;
 public class JumpGame2 {
     public static void main(String[] args) {
         System.out.println(Greedy.jump(new int[]{2, 3, 1, 1, 4}));
-        System.out.println(Greedy.timeComplexity);
-        System.out.println(Greedy.spaceComplexity);
-
-
+        System.out.println(Greedy.getTimeAndSpaceComplexity());
         System.out.println(DynamicProgramming.jump(new int[]{2, 3, 1, 1, 4}));
-
+        System.out.println(DynamicProgramming.getTimeAndSpaceComplexity());
     }
-    static class Greedy {
+    static class Greedy extends Algorithm {
         static final String timeComplexity = "O(N)";
         static final String spaceComplexity = "O(1)";
         public static int jump(int[] nums) {
@@ -28,8 +25,8 @@ public class JumpGame2 {
             return jumps;
         }
     }
-    static class DynamicProgramming {
-        static final String timeComplexity = "O(N)";
+    static class DynamicProgramming extends Algorithm{
+        static final String timeComplexity = "O(N^2)";
         static final String spaceComplexity = "O(N)";
         public static int jump(int[] nums) {
             int n = nums.length;

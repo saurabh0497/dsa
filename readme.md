@@ -25,7 +25,7 @@ As an example, Longest Substring without Repeating Characters is a classic slidi
 Non-array Applications
 The two-pointer technique is not limited to arrays. Two pointer can be done on other structures, like linked list, as long as they are iterable.
 
-For example, in Happy Number, you are asked to detect a cycle from a linked list structure, and it can be solved using a two-pointer technique called Floyd's Cycle-Finding Algorithm.
+For example, in Happy Number, you are asked to detect a cycle from a linked list structure, and it can be solved using a two-pointer technique called Floyd's Cycle-Finding dynamic_programming.dynamic_programming.Algorithm.
 
 Why Use Two Pointers?
 Two pointers are helpful because it often offers a more efficient solution than the naive solution. From the examples above, if we use the naive solution and use two loops to iterate through the array, the time complexity would typically be O(n^2), which is generally insufficient. If we use two pointers for this type of problem, we are often only passing through the array once with the two pointers, which means that the time complexity is often O(n).

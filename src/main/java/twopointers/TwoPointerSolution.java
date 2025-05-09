@@ -1,6 +1,8 @@
+package twopointers;
+
 import java.util.Arrays;
 
-class Solution {
+class TwoPointerSolution {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
         int n = nums1.length;
         int count = 0;
@@ -46,7 +48,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        TwoPointerSolution solution = new TwoPointerSolution();
 
         // Test case
         int[] nums1 = {0, 1, -1};
